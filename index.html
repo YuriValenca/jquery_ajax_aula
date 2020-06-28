@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">Minha página</a>
+        <div class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="00000-000" id="cep">
+          <button class="btn btn-outline-success my-2 my-sm-0" onclick="consulta_cep()">Buscar CEP</button>
+        </div>
+      </nav>
+
+      <div class="container bar">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        </div>
+     </div>
+
+      <div class="container site_vazio" style="margin-top: 20px;">
+        <div class="row">
+            <h3 id="title_cep">CEP</h3>
+        </div>
+        <div class="row">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Rua/Av</td>
+                        <td id="rua_av"></td>
+                    </tr>
+                    <tr>
+                        <td>Bairro</td>
+                        <td id="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td>Cidade</td>
+                        <td id="cidade"></td>
+                    </tr>
+                    <tr>
+                        <td>UF</td>
+                        <td id="uf"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+
+</body>
+</html>
